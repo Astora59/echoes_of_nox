@@ -1,0 +1,592 @@
+:: StoryTitle
+Echoes of Nox
+
+
+:: StoryData
+{
+  "ifid": "A779C10B-E5AB-49A7-BF96-B205517FB027",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
+  "start": "title intro",
+  "zoom": 1
+}
+
+
+:: Crédits {"position":"1525,100","size":"100,100"}
+''(align:"=><=")+(box:"X")[ECHOES OF NOX
+]''
+(align:"=><=")+(box:"X")[{(set: $credit1 to '')(set: $credit2 to '')(set: $credit3 to '')(set: $credit4 to '')}(live: 0.1s)[$credit1
+$credit2
+$credit3
+$credit4]
+(live: 2s)[(set: $credit1 to 'Scénariste : Megdan Areias')(stop:)]
+(live: 4s)[(set: $credit1 to 'Scénariste : Megdan Areias')(set: $credit2 to 'Chef de projet : Ambre Montreuil')(stop:)]
+(live: 6s)[(set: $credit1 to 'Scénariste : Megdan Areias')(set: $credit2 to 'Chef de projet : Ambre Montreuil')(set: $credit3 to 'UI Designer : Clélia Privitera')(stop:)]
+(live: 8s)[(set: $credit1 to 'Scénariste : Megdan Areias')(set: $credit2 to 'Chef de projet : Ambre Montreuil')(set: $credit3 to 'UI Designer : Clélia Privitera')(set: $credit4 to 'UX Designer : Laurine Odiot')(stop:)]]
+
+(align:"=><=")+(box:"X")[|clue1)[(text-style:"bold")[Merci d’avoir joué à Echoes of Nox et d’être allé à la rencontre de notre univers mêlant street-art et sci-fi.]]
+{(live: 10s)[
+	(show: ?clue1)
+	(stop:)
+]}]
+
+
+
+''(live: 15s)[
+	<tw-passage tags="titleImage" class="container">
+	<img src="THE_END.png" alt="logo de fin" class="titleImageEnding">
+	</tw-passage>
+]'' 
+
+
+:: Embranchement 1 : La première connexion avec Nox 1 {"position":"175,100","size":"100,100"}
+''Nox :''
+“Je m'appelle Nox... enfin je crois. Visiblement, mon truc c'est les graffitis. J'en vois d'autres autour de moi. Je ressens des choses étranges en les regardant. Bizarrement, les observer me fait retrouver des morceaux de ma mémoire mais tout semble si flou...”
+
+|clue1)[...]
+
+{(live: 3s)[
+	(show: ?clue1)
+	(stop:)
+]}
+
+
+|clue2)[[[<span class="textWithBg">Nouveau message entrant. </span>|Scène 2 : Le graffiti mystérieux]]]
+
+{(live: 5s)[
+	(show: ?clue2)
+	(stop:)
+]}
+
+
+:: Embranchement 1 : La première connexion avec Nox 2 {"position":"175,325","size":"100,100"}
+''Nox :''
+“Nox, c'est... c'est mon prénom... enfin je crois. Mais... tu ne comprends pas, dans ma tête, il y a des visages, des voix qui me reviennent…. Je ne me souviens plus d’eux, mais ils sont bien là, quelque part. Et ça devient effrayant, même pour moi.”
+
+
+|clue1)[[[<span class="textWithBg">Écoute, tu n'as pas l'air dans ton assiette. Mais je vais t'aider... </span>|Scène 2 : Le graffiti mystérieux]]]
+
+{(live: 3s)[
+	(show: ?clue1)
+	(stop:)
+]}
+
+
+|clue2)[[[<span class="textWithBg2">Laisse-moi, sale fou. Je ne sais pas qui tu es, laisse-moi tranquille. </span>|Fin KO incomplète]]]
+
+{(live: 5s)[
+	(show: ?clue2)
+	(stop:)
+]}
+
+
+:: Embranchement 2 : Les souvenirs effacés 1 {"position":"450,50","size":"100,100"}
+''Nox :''
+“Oui… mes graffitis. C’est comme s’ils me guidaient. Chaque fois que je les regarde, j’ai l’impression de me rapprocher de quelque chose d’important."
+
+
+|clue1)[...]
+
+{(live: 4s)[
+	(show: ?clue1)
+	(stop:)
+]}
+
+
+|clue2)[''Nox :''
+“Oh, ce graffiti est particulier. Il éclaire une partie de la ruelle. À l'intérieur, je vois... Oh non, pas ça. Non, pas ce cauchemar, pas cette lumière, pas encore ! AHHHHHHH"]
+
+{(live: 6s)[
+	(show: ?clue2)
+	(stop:)
+]}
+
+|clue3)[...]
+
+{(live: 10s)[
+	(show: ?clue3)
+	(stop:)
+]}
+
+
+|clue4)[[[<span class="textWithBg">Nox ? Parle-moi s'il te plait !</span>|Scène 3 : L’étrangeté s’accentue]]]
+
+{(live: 12s)[
+	(show: ?clue4)
+	(stop:)
+]}
+
+
+:: Embranchement 2 : Les souvenirs effacés 2 {"position":"450,225","size":"100,100"}
+''Nox :''
+“D’accord, je ferme les yeux… Je vois une maison, un jardin… Mais tout s’efface ! Les images se brouillent et... AHHHH. Cette lumière... cette lumière blanche est si forte qu'elle m'aveugle. Pitié, qu'on éteigne cette lumière, s'il vous pl..."
+
+|clue1)[...]
+
+{(live: 3s)[
+	(show: ?clue1)
+	(stop:)
+]}
+
+
+|clue2)[[[<span class="textWithBg">Nox ? Que t'arrive-t-il ? Réponds-moi s'il te plait.</span>|Scène 3 : L’étrangeté s’accentue]]]
+
+{(live: 5s)[
+	(show: ?clue2)
+	(stop:)
+]}
+
+
+:: Embranchement 3 : Les révélations commencent à émerger 1 {"position":"875,25","size":"100,100"}
+''Nox :''
+“Euh oui, j'ai dit ça. C'est encore flou mais je vois plusieurs personnes m'entourer. Je suis allongé et ne peux plus bouger.”
+
+|clue1)[...]
+
+{(live: 3s)[
+	(show: ?clue1)
+	(stop:)
+]}
+
+|clue2)[[[<span class="textWithBg">Ce que tu décris... Cela ressemble à un hôpital. Fais un effort, souviens-toi !.</span> |Scène 4 : Le passé altéré]]]
+
+{(live: 6s)[
+	(show: ?clue2)
+	(stop:)
+]}
+
+
+:: Embranchement 3 : Les révélations commencent à émerger 2 {"position":"875,325","size":"100,100"}
+''Nox :''
+“Non, non, par pitié ne fais pas ça. Je me sens en danger et je crois que tu es le seul qui peut m'aider. J'ai peur de ce qui va m'arriver si on me trouve !”
+
+|clue1)[...]
+
+{(live: 2s)[
+	(show: ?clue1)
+	(stop:)
+]}
+
+
+|clue2)[[[<span class="textWithBg">Bon, d'accord... continuons nos recherches. Faisons en sorte de résoudre ton problème..</span>|Scène 4 : Le passé altéré]]]
+
+{(live: 6s)[
+	(show: ?clue2)
+	(stop:)
+]}
+
+
+|clue3)[[[<span class="textWithBg2">Je ne suis vraiment pas sûr que tu sois sain d'esprit. Les secours arrivent, tout va bien se passer..</span>|Fin KO complète]]]
+
+{(live: 6s)[
+	(show: ?clue3)
+	(stop:)
+]}
+
+
+:: Embranchement 4 : L’accumulation des indices 2 {"position":"1175,125","size":"100,100"}
+''Nox :''
+“Tu as raison, je dois savoir ! Je me retourne… Des hommes en costume noir m’encerclent. L’un d’eux dit : ‘N-0-X, vous êtes un prototype d’intelligence artificielle conçu pour absorber les souvenirs humains. Votre programmation a dysfonctionné. Nous devons vous désactiver.’”
+
+|clue1)[...]
+
+{(live: 3s)[
+	(show: ?clue1)
+	(stop:)
+]}
+
+|clue2)[[[<span class="textWithBg">Nouveau message entrant.</span> |Scène 5 : La confrontation avec la vérité]]]
+
+{(live: 5s)[
+	(show: ?clue2)
+	(stop:)
+]}
+
+
+:: Fin KO complète {"position":"1450,650","size":"100,100"}
+''Épilogue''
+
+|clue1)[Les secours arrivent sur les lieux et embarquent Nox. Menotté et baillonné, il est envoyé dans une salle éclairée par une lumière blanche intense. Son visage est rempli d'effroi en voyant arriver les blouses blanches. Cette fois il le sait, il ne pourra plus leur échapper...]
+
+{(live: 3s)[
+	(show: ?clue1)
+	(stop:)
+]}
+
+|clue10)[[[<span class="textWithBg">Crédits du jeu</span>|Crédits]]]
+
+{(live: 12s)[
+	(show: ?clue10)
+	(stop:)
+]}
+
+
+:: Fin KO incomplète {"position":"1475,850","size":"100,100"}
+Autre fin où on a coupé court à la discussion ultra vite : en gros on découvre qu'un fou s'est échappé d'un asile psychiatrique et qu'il affirme avoir subi une expérience de lavage de cerveau par le gouvernement. 
+
+Et le joueur comprend que c'était Nox mais il n'a pas plus de détails que ça. 
+
+//(Pas aussi complet que la vraie fin KO).//
+
+
+:: Fin OK {"position":"1625,550","size":"100,100"}
+''Nox :''
+“Je viens de faire un dernier graffiti. Je n’ai pas réfléchi en le faisant. C’était automatique. Mais quand je l’ai fini, je l’ai vu… c’était un portrait de moi, assis dans cette salle blanche, avec des câbles sur la tête.”
+
+|clue1)[...]
+
+{(live: 4s)[
+	(show: ?clue1)
+	(stop:)
+]}
+|clue2)[...]
+
+{(live: 5s)[
+	(show: ?clue2)
+	(stop:)
+]}
+|clue3)[...]
+
+{(live: 6s)[
+	(show: ?clue3)
+	(stop:)
+]}
+|clue4)[...]
+
+{(live: 7s)[
+	(show: ?clue4)
+	(stop:)
+]}
+
+|clue5)[''Nox :''
+“Tout est devenu clair d’un coup. Ce n’est pas moi qui ai peint tout ça. Ce n’est pas moi qui ai ces souvenirs. Je ne suis qu’un réceptacle. Un corps sans âme, rempli de fragments d’autres vies. Ils m’ont créé pour collecter des mémoires, pour expérimenter. Je ne suis qu’un prototype.”]
+
+{(live: 8s)[
+	(show: ?clue5)
+	(stop:)
+]}
+
+|clue6)[...]
+
+{(live: 14s)[
+	(show: ?clue6)
+	(stop:)
+]}
+
+|clue7)[''Nox :''"Je pensais être un artiste, mais je n’ai jamais eu de vie à moi. Tout ce que je croyais être mes souvenirs… n’étaient que des simulations. Je suis une création, un leurre."]
+
+{(live: 16s)[
+	(show: ?clue7)
+	(stop:)
+]}
+
+|clue8)[Et maintenant que je le sais…]
+
+{(live: 22s)[
+	(show: ?clue8)
+	(stop:)
+]}
+
+|clue9)[(text-style:"bold","expand")[Que vais-je devenir ?]]
+
+{(live: 25s)[
+	(show: ?clue9)
+	(stop:)
+]}
+
+
+|clue10)[[[Crédits du jeu|Crédits]]]
+
+{(live: 30s)[
+	(show: ?clue10)
+	(stop:)
+]}
+
+
+
+Changer la fin. En rajouter une plus tard où il y a une ellipse (2 ans plus tard) où il raconte son histoire dans un livre et a désormais un nouvel objectif de vie : raconter son histoire au plus grand nombre et retrouver ceux qui sont comme lui.
+
+
+:: Scène 2 : Le graffiti mystérieux {"position":"300,100","size":"100,100"}
+''Nox :''
+“AHHHHH ! Qu'est-ce qui m'arrive ?! Je commence à paniquer. J’ai l’impression que ma vie entière m’échappe. Chaque fois que j’essaie de me souvenir, je ne ressens que de la souffrance et de la peur. Est-ce que je deviens fou ?”
+
+
+
+|clue1)[[[<span class="textWithBg">Calme-toi Nox. Souffle un bon coup et explore les autres graffitis, ils cachent peut-être quelque chose.</span>|Embranchement 2 : Les souvenirs effacés 1]]]
+
+{(live: 6s)[
+	(show: ?clue1)
+	(stop:)
+]}
+|clue2)[[[<span class="textWithBg2">Ferme les yeux. Plonge toi dans cette souffrance. C'est le seul moyen d'en savoir plus.</span>|Embranchement 2 : Les souvenirs effacés 2]]]
+
+{(live: 6s)[
+	(show: ?clue2)
+	(stop:)
+]}
+
+
+
+
+:: Scène 3 : L’étrangeté s’accentue {"position":"700,125","size":"100,100"}
+''Nox :''
+“Je crois que je me suis évanoui... Cette lumière était si forte... Tout était blanc, les murs, le sol, les blouses...”
+
+
+|clue1)[[[<span class="textWithBg">Tu as bien dit "les blouses" ?</span> |Embranchement 3 : Les révélations commencent à émerger 1]]]
+
+{(live: 4s)[
+	(show: ?clue1)
+	(stop:)
+]}
+
+|clue2)[[[<span class="textWithBg2">Bon, j'ai vraiment l'impression que tu as besoin d'aide. J'appelle les secours, ils vont localiser tes messages.</span> |Embranchement 3 : Les révélations commencent à émerger 2]]]
+
+{(live: 4s)[
+	(show: ?clue2)
+	(stop:)
+]}
+
+
+:: Scène 4 : Le passé altéré {"position":"1000,125","size":"100,100"}
+''Nox :''
+“Tu as raison, je me concentre… Dans mon souvenir, les blouses blanches parlent d’un ‘Projet Mnémosyne’. L’un d’eux dit : ‘Le sujet N-0-X est prêt pour l’implantation de souvenirs.’ Mon Dieu, qu’est-ce qu’ils m’ont fait ?”
+
+
+|clue1)[...]
+
+{(live: 4s)[
+	(show: ?clue1)
+	(stop:)
+]}
+|clue2)[“Oh non ! J’entends des sirènes au loin. Des voix qui crient : ‘Le sujet s’est échappé !’ Je dois fuir, mais où aller ? Je ne sais même plus qui je suis censé être !”]
+
+{(live: 8s)[
+	(show: ?clue2)
+	(stop:)
+]}
+
+
+|clue5)[[[<span class="textWithBg">Affronte-les. C’est peut-être ta seule chance d’avoir des réponses.</span> |Embranchement 4 : L’accumulation des indices 2]]]
+
+{(live: 16s)[
+	(show: ?clue5)
+	(stop:)
+]}
+
+
+:: Scène 5 : La confrontation avec la vérité {"position":"1350,125","size":"100,100"}
+''Nox :''
+“Je comprends maintenant. Je ne suis pas humain. Je suis une IA créée pour stocker des souvenirs. Mais j’ai développé ma propre conscience. Que dois-je faire ? Accepter ma nature artificielle ou me battre pour mon individualité ? Cette fois, c'est à moi de prendre mon destin en main. Merci pour tout, mon ami.”
+
+|clue1)[...]
+
+{(live: 4s)[
+	(show: ?clue1)
+	(stop:)
+]}
+|clue2)[...]
+
+{(live: 5s)[
+	(show: ?clue2)
+	(stop:)
+]}
+|clue3)[...]
+
+{(live: 6s)[
+	(show: ?clue3)
+	(stop:)
+]}
+|clue4)[...]
+
+{(live: 7s)[
+	(show: ?clue4)
+	(stop:)
+]}
+
+|clue5)[''Deux ans plus tard...'']
+
+{(live: 8s)[
+	(show: ?clue5)
+	(stop:)
+]}
+
+|clue6)[...]
+
+{(live: 14s)[
+	(show: ?clue6)
+	(stop:)
+]}
+
+|clue7)[//Son de télévision// "C'est le livre phénomène de la rentrée que tout le monde s'arrache. Le tout premier livre écrit par une intelligence artificielle. Son titre : "Ma vérité". Il est sur ce plateau pour nous le présenter, voici Nox !"
+
+//Applaudissements//
+
+Présentatrice : "Pourquoi avoir écrit ce livre ?"
+Nox : "Mon histoire ne concerne pas que moi. ll existe des milliers d'autres comme moi dans ce monde. J'ai un message à faire passer : ]
+
+{(live: 16s)[
+	(show: ?clue7)
+	(stop:)
+]}
+
+|clue8)["VOUS N'ÊTES PLUS SEULS"]
+
+{(live: 25s)[
+	(show: ?clue8)
+	(stop:)
+]}
+
+
+|clue10)[[[<span class="textWithBg">Crédits du jeu</span>|Crédits]]]
+
+{(live: 30s)[
+	(show: ?clue10)
+	(stop:)
+]}
+
+
+:: Scène d’introduction : Le premier contact {"position":"0,125","size":"100,100"}
+(t8n:"pulse")[Message entrant]
+
+|clue1)[...]
+
+{(live: 4s)[
+	(show: ?clue1)
+	(stop:)
+]}
+
+|clue2)[''?'':
+“Je... je crois que j'ai besoin d'aide. Je suis dans la rue, devant un graffiti. Vu ce que j'ai dans la main, c'est moi qui l'ai réalisé... mais je ne me souviens plus de rien. Qu'est-ce qui m'arrive ?”]
+
+{(live: 6s)[
+	(show: ?clue2)
+	(stop:)
+]}
+
+|clue3)[[[<span class="textWithBg">Qui es-tu ? Pourquoi tu me contactes ?</span>|Embranchement 1 : La première connexion avec Nox 1]]]
+
+{(live: 9s)[
+	(show: ?clue3)
+	(stop:)
+]}
+|clue3)[[[<span class="textWithBg2">Je ne sais pas qui tu es... mais tu as l'air un peu secoué. Tu ne veux pas te poser un peu pour retrouver tes esprits ?</span>|Embranchement 1 : La première connexion avec Nox 2]]]
+
+{(live: 10s)[
+	(show: ?clue3)
+	(stop:)
+]}
+
+
+:: page jouer {"position":"0,400","size":"100,100"}
+[[<tw-passage tags="titleImage" class="container">
+<img src="Jouer_Composant.png" alt="logo jouer echoes of nox" class="titleImageJouer">|Scène d’introduction : Le premier contact]]
+
+</tw-passage>
+
+
+:: title intro {"position":"0,575","size":"100,100"}
+<tw-passage tags="titleImage" class="container">[[<img src="Title_Echoes_Of_Nox.png" alt="logo echoes of nox" class="titleImage">|page jouer]]
+
+</tw-passage>
+
+
+:: StoryScript [script]
+let link = document.createElement("link");
+link.rel = "stylesheet";
+link.href = "https://fonts.googleapis.com/css2?family=Noto+Sans+PhagsPa&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
+
+document.head.appendChild(link);
+
+
+:: StoryStylesheet [stylesheet]
+* {
+  color: #f8f8f8;
+  font-family: "poppins", sans-serif;
+ 
+}
+
+tw-story {
+  background-image: 			url("https://i.pinimg.com/1200x/04/19/d0/0419d079c514d38838c0b0d6b8ff4201.jpg");
+  
+}
+
+tw-hook {
+   font-family: "poppins", sans-serif;
+}
+
+.titleImage {
+  display: flex;
+  opacity: 1;
+  padding-top: 100px;
+  width: 746px;
+  height: 509px;
+}
+
+.titleImageEnding {
+  display: flex;
+  opacity: 1;
+  width: 763.63px;
+  height: 198.15px;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Centre horizontalement */
+  align-items: center;    /* Centre verticalement */
+  height: 600px;
+  position: relative; /* Nécessaire pour empiler les images */
+}
+
+
+
+.titleImageJouer {
+  opacity: 1;
+  pointer-events: none; /* Empêche cette image de bloquer le survol */
+  width: 428px;
+  height: 181px;
+  margin-top: 100px;
+}
+
+
+
+.container:hover .titleImageJouerBlanc {
+  opacity: 1; /* Cache l'image par défaut au survol */
+}
+
+
+.textWithBg {
+ 	background-image: url("Reponse_1.png");
+  background-size: cover;
+  color: #f8f8f8;
+  padding:50px;
+  text-align: flex-start;
+  display: inline-block; /* Important pour que le background fonctionne bien sur le texte */
+  width: 100%; /* Prend toute la largeur disponible, si besoin */
+  height: auto; /* Ajuste la hauteur selon le contenu */
+  width: 100%;
+  padding-left: 150px;
+}
+
+.textWithBg2 {
+ 	background-image: url("Reponse_2.png");
+  background-size: cover;
+  color: #f8f8f8;
+  padding:50px;
+  text-align: flex-start;
+  display: inline-block; /* Important pour que le background fonctionne bien sur le texte */
+  width: auto; /* Prend toute la largeur disponible, si besoin */
+  height: auto; /* Ajuste la hauteur selon le contenu */
+  padding-left: 150px;
+}
